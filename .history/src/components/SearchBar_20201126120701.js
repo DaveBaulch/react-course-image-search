@@ -1,0 +1,33 @@
+import React from 'react';
+
+class SearchBar extends React.Component {
+  onInputChange(event) {
+    console.log(event.target.value);
+  }
+
+  // onInputClick() {
+  //   console.log('Input was clicked');
+  // }
+
+  render() {
+    return (
+      <div className="ui segment">
+        <form className="ui form">
+          <div className="field">
+            <label htmlFor="search">Image Search</label>
+            <input
+              id="search"
+              type="text"
+              onChange={(event) => comsole.log(event.target.value)}
+
+              // onChange={this.onInputChange}
+              // onClick={this.onInputClick}
+            ></input>
+          </div>
+        </form>
+      </div>
+    );
+  }
+}
+
+export default SearchBar;
